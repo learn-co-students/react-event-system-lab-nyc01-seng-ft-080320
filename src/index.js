@@ -1,13 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Keypad from './components/Keypad';
-import EyesOnMe from './components/EyesOnMe';
+import React from "react";
+import ReactDOM from "react-dom";
+// import "./index.css";
+import App from "./App";
 
 ReactDOM.render(
-  <div>
-    <Keypad />
-    <EyesOnMe />
-  </div>,
+  <React.StrictMode>
+    <App className="app"/>
+  </React.StrictMode>,
   document.getElementById('global')
 );
